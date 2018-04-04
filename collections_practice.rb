@@ -29,6 +29,7 @@ def kesha_maker(array)
     word_array = word.split
     word_array[2] = "$"
     kesha_array << word_array.join
+    binding.pry
   end
   return kesha_array
 end
