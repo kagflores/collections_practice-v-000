@@ -25,11 +25,9 @@ def kesha_maker(array)
   i = 0
   kesha_array = []
   word_array = []
-  array.each do |word|
-    word_array = word.split
-    word_array[2] = "$"
-    kesha_array << word_array.join
-    binding.pry
+  array.each_with_index do |word, index|
+    word[3] = replaces["$"]
+    kesha_array << word
   end
   return kesha_array
 end
