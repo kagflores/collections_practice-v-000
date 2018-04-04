@@ -26,7 +26,7 @@ def kesha_maker(array)
   kesha_array = []
   word_array = []
   array.each_with_index do |word, index|
-    word[3] = replaces["$"]
+    word[3] = "$"
     kesha_array << word
   end
   return kesha_array
